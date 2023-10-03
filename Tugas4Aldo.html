@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Tampilan Register</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box">
+            <img src="logo-its.png" alt="Logo ITS" class="logo">
+            <div class="description">
+                <img src="myits-sso.png" alt="myITS" class="myits">
+            </div>
+            <div>
+                <form id="form-login" method="post">
+                    <div id="inputname" class="inputbox">
+                        <label for="nama">Nama</label>
+                        <input type="text" id="nama" value="" required="" autocomplete="off" class="filled">
+                    </div>
+                    <div id="inputusername" class="inputbox">
+                        <label for="nrp">myITS ID</label>
+                        <input type="text" id="username" value="" required="" autocomplete="off" onkeypress="return hanyaAngka(event)" class="filled">
+                    </div>
+                    <div id="inputtlp" class="inputbox">
+                        <label for="tlp">Nomor Telp</label>
+                        <input type="text" id="Telp" value="" required="" autocomplete="off" onkeypress="return hanyaAngka(event)" class="filled">
+                    </div>
+                    <div id="inputemail" class="inputbox">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" value="" required="" autocomplete="off" class="filled">
+                    </div>
+                    <div id="inputpassword" class="inputbox">
+                        <label for="password">Kata sandi</label>
+                        <input type="password" id="password" required="" autocomplete="off" class="filled">
+                    </div>
+                    <div class="inputbox">
+                        <a href="register.html">
+                            <button class="btn btn-block bg-orange" type="submit">Register</button>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer class="cpr">
+            © 2023 Tugas 4 Pweb Aldo. referensi langsung dari myITS
+        </footer>    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
